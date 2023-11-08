@@ -55,7 +55,7 @@ L'HTML fournit la structure fondamentale d'une page Web, mais pour définir le s
 
 ## Les balises de bases
 
-<h1></h1> : Balises de titrage (possède 6 niveaux)
+`<h1></h1>` : Balises de titrage (possède 6 niveaux)
 
 ```html
 <h1>Titre de niveau 1</h1>
@@ -65,9 +65,9 @@ L'HTML fournit la structure fondamentale d'une page Web, mais pour définir le s
 <h5>Titre de niveau 5</h5>
 <h6>Titre de niveau 6</h6>
 ```
-<p></p> : Balises de paragraphes
-<br />: Balise de retour à la ligne (break)
-<hr />: Balise de séparateur.
+`<p></p>` : Balises de paragraphes
+`<br />`: Balise de retour à la ligne (break)
+`<hr />`: Balise de séparateur.
 
 ## Les balises de mise en forme
 
@@ -79,8 +79,9 @@ On évitera d'utiliser ces trois balises, on préfèrera appliquer le style en C
 <strong>Indique l'importance d'une partie de texte (le navigateur appliquera du gras)</strong>
 <em>Met l'emphase sur une partie de texte (le navigateur appliquera de l'italique)</em>
 
+<kbd>Cette balise est à utiliser quand on veut afficher une touche de clavier ou un raccourci clavier</kbd>
 <code>Vous pouvez entourer du code avec cette balise</code>
-<pre>La balise <pre> est similaire à <code> mais conserve également la mise en forme du texte, y compris les espaces et les sauts de ligne. Cela peut être utile si vous avez un code HTML bien formaté que vous souhaitez afficher tel quel.</pre>
+<pre>La balise `<pre>` est similaire à `<code>` mais conserve également la mise en forme du texte, y compris les espaces et les sauts de ligne. Cela peut être utile si vous avez un code HTML bien formaté que vous souhaitez afficher tel quel.</pre>
 
 ## Les liens et les ancres
 
@@ -135,7 +136,7 @@ Pour envoyer vers un courriel, on spécifie dans le chemin `mailto`
 
 - Assurez-vous que les liens sont clairs et descriptifs pour les utilisateurs.
 - Vérifiez que les URLs sont valides et fonctionnent correctement.
-- Vous pouvez ajouter des attributs `title` pour fournir un texte alternatif (pour l'accessibilité) lorsque le texte du lien n'est pas suffisamment desctiptif.
+- Vous pouvez ajouter des attributs `title` pour fournir un texte alternatif (pour l'accessibilité) lorsque le texte du lien n'est pas suffisamment descriptif.
 
 La balise `<a>` est l'un des éléments les plus importants pour la navigation et l'interaction dans une page web, et elle offre de nombreuses possibilités pour améliorer l'expérience des utilisateurs.
 
@@ -170,6 +171,19 @@ Une fois que j'ai défini mon type de liste, j'englobe chacun de ses éléments 
 <ol>
     <li>Ceci est une liste organisée</li>
 </ol>
+```
+
+Il existe un troisième type de liste, beaucoup moins connue, la liste de description. Elle permet d'affubler chaque terme d'une liste d'une description.
+On utilise la balise `<dl>` pour créer cette liste qu'on remplira de termes (`<dt>`) et de leurs descriptions (`<dd>`)
+
+
+```html
+ <dl>
+  <dt>Pomme</dt>
+  <dd>- Fruit multicolore, souvent sucré et parfois acide</dd>
+  <dt>Citron</dt>
+  <dd>- Fruit jaune particulièrement acide</dd>
+</dl> 
 ```
 
 ## Les images `<img>`
