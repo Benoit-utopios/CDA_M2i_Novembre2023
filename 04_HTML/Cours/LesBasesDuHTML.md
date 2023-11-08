@@ -71,17 +71,17 @@ L'HTML fournit la structure fondamentale d'une page Web, mais pour définir le s
 
 ## Les balises de mise en forme
 
-<b>Met le texte en gras</b>
-<i>Met le texte en italique</i>
-<u>Souligne le texte</u>
+`<b></b>` Met le texte en gras
+`<i></i>` Met le texte en italique
+`<u></u>` Souligne le texte
 On évitera d'utiliser ces trois balises, on préfèrera appliquer le style en CSS.
 
-<strong>Indique l'importance d'une partie de texte (le navigateur appliquera du gras)</strong>
-<em>Met l'emphase sur une partie de texte (le navigateur appliquera de l'italique)</em>
+`<strong></strong>` Indique l'importance d'une partie de texte (le navigateur appliquera du gras)
+`<em></em>`Met l'emphase sur une partie de texte (le navigateur appliquera de l'italique)
 
-<kbd>Cette balise est à utiliser quand on veut afficher une touche de clavier ou un raccourci clavier</kbd>
-<code>Vous pouvez entourer du code avec cette balise</code>
-<pre>La balise `<pre>` est similaire à `<code>` mais conserve également la mise en forme du texte, y compris les espaces et les sauts de ligne. Cela peut être utile si vous avez un code HTML bien formaté que vous souhaitez afficher tel quel.</pre>
+`<kbd></kbd>` Cette balise est à utiliser quand on veut afficher une touche de clavier ou un raccourci clavier
+`<code></code>` Vous pouvez entourer du code avec cette balise
+`<pre></pre>` La balise `<pre>` est similaire à `<code>` mais conserve également la mise en forme du texte, y compris les espaces et les sauts de ligne. Cela peut être utile si vous avez un code HTML bien formaté que vous souhaitez afficher tel quel.
 
 ## Les liens et les ancres
 
