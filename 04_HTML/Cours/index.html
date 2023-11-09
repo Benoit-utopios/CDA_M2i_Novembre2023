@@ -34,8 +34,23 @@
     <button disabled>Bouton 2</button> -->
 
     <!-- <img width="100px" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo Google"> -->
+    
+    
+<textarea name="description" rows="4" cols="20">
+Saisissez votre commentaire ici...
+</textarea><br>
 
-    <input type="text" placeholder="Votre nom">
+    <label for="pays">Pays:</label>
+<select name="pays" id="pays">
+    <option value="france">France</option>
+    <option value="espagne">Espagne</option>
+    <option value="allemagne">Allemagne</option>
+</select><br>
+    <label for="name">Veuillez taper votre nom: </label>
+    <input type="text" placeholder="Votre nom" id="name" autofocus>
+    <hr />
+    <fieldset>
+    <legend>Informations personnelles</legend>
     <input type="password" placeholder="Votre mot de passe"><br>
     <input type="radio" name="sport" value="foot"> Football
     <input type="radio" name="sport" value="basket"> Basketball <br>
@@ -43,5 +58,6 @@
     <input type="date" name="date">
     <input type="number" name="quantite" min="0" max="10" step="2"><br>
     <input type="url" placeholder="Votre lien" name="URL_web">
+    </fieldset>
 </body>
 </html>
