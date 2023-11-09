@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <h1>Me contacter</h1>
+    <hr />
+    <form action="#" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br>
+      
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br>
+      
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone"><br>
+      
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+      
+        <label>Genre :</label>
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">Homme</label>
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">Femme</label>
+        <input type="radio" id="autre" name="genre" value="autre">
+        <label for="autre">Autre</label><br>
+      
+        <label>Intérêts :</label>
+        <input type="checkbox" id="web" name="interets[]" value="web">
+        <label for="web">Développement Web</label>
+        <input type="checkbox" id="mobile" name="interets[]" value="mobile">
+        <label for="mobile">Développement Mobile</label><br>
+      
+        <label for="pays">Pays :</label>
+        <select id="pays" name="pays">
+          <option value="france">France</option>
+          <option value="canada">Canada</option>
+          <option value="etats-unis">États-Unis</option>
+        </select><br>
+      
+        <input type="submit" value="Envoyer">
+      </form>
+    <br /><hr />
+    <a href="./index.html">
+        <button type="button">Retour</button>
+    </a>
+</body>
+</html>
