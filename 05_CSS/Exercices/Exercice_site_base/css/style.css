@@ -1,0 +1,103 @@
+body {
+    background-color: dodgerblue;
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*
+img {
+    border-radius: 20px;
+}
+*/
+
+#dog-container {
+  text-align: center;
+}
+
+#dog-picture {
+
+    border-radius: 20px;
+}
+
+/* page Horaire */
+
+table {
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,td {
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+th {
+    background-color: blue;
+}
+
+td {
+    background-color: white;
+    color: black;
+}
+
+/* Formulaire */
+form{
+    text-align: right;
+    width: 50%;
+    margin: auto;
+}
+
+form fieldset{
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group input[type="text"] {
+    width: 200px;
+}
+
+.form-group textarea {
+    width: 100%;
+    resize: none;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+a:hover {
+    font-size: 1.1rem;
+}
