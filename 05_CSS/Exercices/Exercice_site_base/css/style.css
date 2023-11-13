@@ -101,3 +101,8 @@ form button {
 a:hover {
     font-size: 1.1rem;
 }
+
+.test-float::first-letter{
+    font-size: 40px;
+    float: left;
+}
