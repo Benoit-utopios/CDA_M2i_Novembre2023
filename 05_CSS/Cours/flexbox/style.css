@@ -93,3 +93,18 @@
     height: 100%;
 }
 
+#flex-container-7 {
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+#flex-container-7 div{
+    width: 49%;
+}
+
+#flex-container-7 #box5 {
+    width: 100%;
+    background-color: purple;
+}
+
