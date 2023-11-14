@@ -1,0 +1,58 @@
+.flex-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    margin: 20px auto;
+    border: 5px solid black;
+}
+
+.flex-container div {
+    margin : 5px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-box span {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: block;
+    font-size: 48px;
+    height: auto;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+}
+
+.flex-box:nth-child(4n) {
+    background-color: grey;
+}
+
+.flex-box:nth-child(4n +1) {
+    background-color: blue;
+}
+
+.flex-box:nth-child(4n +2) {
+    background-color: green;
+}
+
+.flex-box:nth-child(4n +3) {
+    background-color: yellow;
+}
+
+.flex-container-wrap {
+    flex-wrap: wrap;
+}
+
+#flex-container-2 {
+    justify-content: space-between;
+}
+
+#flex-container-3 {
+    justify-content: space-evenly;
+}
+
+#flex-container-4 {
+    justify-content: center;
+}
