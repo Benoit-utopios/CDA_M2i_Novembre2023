@@ -56,3 +56,40 @@
 #flex-container-4 {
     justify-content: center;
 }
+
+#flex-container-5 {
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+#flex-container-5 #box2 {
+    align-self: end;
+}
+
+#flex-container-5 #box4 {
+    align-self: start;
+}
+
+#flex-container-5 #box5 {
+    align-self: end;
+}
+
+#flex-container-6 {
+    height: 1000px;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch; 
+}
+
+#flex-container-6 div{
+    width: calc(33% - 20px);
+    height: calc(25% - 20px);
+    margin: 10%;
+}
+
+#flex-container-6 div:last-child{
+    background-color: orange;
+    height: 100%;
+}
+
