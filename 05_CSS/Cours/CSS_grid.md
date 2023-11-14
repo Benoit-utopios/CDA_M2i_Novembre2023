@@ -29,7 +29,7 @@ Vous pouvez spécifier combien de lignes et de colonnes votre grille doit avoir 
 .container {
   display: grid;
   grid-template-rows: 100px 200px; /* Deux lignes de 100px et 200px de hauteur*/
-  grid-template-columns: 1fr 1fr; /* Deux colonnes, la première prend 1 fraction et la deuxième 2 fractions de l'espace disponible */
+  grid-template-columns: 1fr 2fr; /* Deux colonnes, la première prend 1 fraction et la deuxième 2 fractions de l'espace disponible */
 }
 ```
 ## Placement des éléments dans la grille
