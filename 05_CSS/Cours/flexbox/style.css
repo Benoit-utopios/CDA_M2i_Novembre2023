@@ -85,7 +85,7 @@
 #flex-container-6 div{
     width: calc(33% - 20px);
     height: calc(25% - 20px);
-    margin: 10%;
+    margin: 10px;
 }
 
 #flex-container-6 div:last-child{
