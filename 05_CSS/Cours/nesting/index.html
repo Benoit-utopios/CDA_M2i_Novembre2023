@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .liste {
+            list-style-type: none;
+            padding: 0;
+            li {
+                padding: 10px;
+                background-color: "red";
+                ul {
+                    margin : 0;
+                    padding: 0;
+                    li {
+                        background-color: "blue";
+                        border: 1px solid green;
+                    }
+                }
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="liste">
+        <li>Accueil</li>
+        <li>Produits
+            <ul>
+                <li>Produit 1</li>
+                <li>Produit 2</li>
+                <li>Produit 3</li>
+            </ul>
+
+        </li>
+    </ul>
+    
+</body>
+</html>
