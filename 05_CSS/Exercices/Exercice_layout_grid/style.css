@@ -1,0 +1,39 @@
+* {
+    margin : 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "left middle middle right"
+    "footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.left {
+    grid-area: left;
+    background-color: purple;
+}
+
+.right {
+    grid-area: right;
+    background-color: orange;
+}
+
+.middle {
+    grid-area: middle;
+    background-color: brown;
+    height: 500px;
+}
