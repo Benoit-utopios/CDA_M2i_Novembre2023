@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <i class="bi bi-globe2"></i> eLibrary
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOptions" aria-controls="navbarOptions" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarOptions">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        <a class="nav-link" href="#">Educatifs</a>
+                        <a class="nav-link" href="#">Romans</a>
+                        <a class="nav-link" href="#">Comics</a>
+                        <a class="nav-link" href="#">Magazines</a>
+                    </div>
+                    <div class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarGestionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear"></i> Gestion
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarGestionDropdown">
+                            <li><a class="dropdown-item" href="#">Ajouter un ouvrage</a></li>
+                            <li><a class="dropdown-item" href="#">Modifier un ouvrage</a></li>
+                            <li><a class="dropdown-item" href="#">Supprimer un ouvrage</a></li>
+                        </ul>
+                    </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Titre, Date, Auteur..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Rechercher</button>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 bg-dark text-light rounded mt-4 p-4">
+                    <div class="display-2">- Inscription -</div>
+                    <hr class="my-3">
+                    <form action="mailto:text@example.com" method="post">
+                        <div class="mb-3 row">
+                            <div class="col-3">
+                                <label for="firstname" class="form-label">Prénom :</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="John">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <div class="col-3">
+                                <label for="lastname" class="form-label">Nom :</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="MARTIN">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-3">
+                                <label for="email" class="form-label">Adresse mail :</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="john.martin@example.com" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-3">
+                                <label for="username" class="form-label">Pseudonyme :</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" class="form-control" id="username" name="username" placeholder="John@123" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-3">
+                                <label for="passwordVal" class="form-label">Mot de Passe :</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="password" class="form-control" id="passwordVal" name="passwordVal" placeholder="Azertyuiop" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-3">
+                                <label for="passwordConf" class="form-label">Confirmation :</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="password" class="form-control" id="passwordConf" name="passwordConf" placeholder="Azertyuiop" required>
+                            </div>
+                        </div>
+
+                        <hr class="my-3">
+
+                        <div class="d-flex flex-row justify-content-end">
+                            <button class="btn btn-outline-light" type="submit"><i class="bi bi-send"></i>
+                                Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-4 bg-dark text-center text-light p-3 w-100">
+        <span>Copyrights du site</span>
+    </footer>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</html>

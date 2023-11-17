@@ -1,0 +1,8 @@
+.author-pic {
+    border-radius: 50%;
+}
+
+.table-rounded {
+    border-radius: 15px;
+    overflow: hidden;
+}

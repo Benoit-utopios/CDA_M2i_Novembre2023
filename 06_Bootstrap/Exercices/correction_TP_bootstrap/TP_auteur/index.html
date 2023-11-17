@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <i class="bi bi-globe2"></i> eLibrary
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOptions" aria-controls="navbarOptions" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarOptions">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        <a class="nav-link" href="#">Educatifs</a>
+                        <a class="nav-link" href="#">Romans</a>
+                        <a class="nav-link" href="#">Comics</a>
+                        <a class="nav-link" href="#">Magazines</a>
+                    </div>
+                    <div class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarGestionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear"></i> Gestion
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarGestionDropdown">
+                            <li><a class="dropdown-item" href="#">Ajouter un ouvrage</a></li>
+                            <li><a class="dropdown-item" href="#">Modifier un ouvrage</a></li>
+                            <li><a class="dropdown-item" href="#">Supprimer un ouvrage</a></li>
+                        </ul>
+                    </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Titre, Date, Auteur..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Rechercher</button>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container p-2">
+            <h1 class="display-1 text-muted">- Liste des Auteurs -</h1>
+            <table class="table table-dark table-striped align-middle text-center table-rounded">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Photo</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Date de Naissance</th>
+                        <th scope="col">Ouvrages</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>
+                            <img src="assets/unknown_author.webp" alt="Photo" class="author-pic img-responsive" height="100px">
+                        </td>
+                        <td>Stephen King</td>
+                        <td>21 Septembre 1947</td>
+                        <td>
+                            <ul class="text-start">
+                                <li>It (1986)</li>
+                                <li>Misery (1987)</li>
+                                <li>The Green Mile (1996)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-outline-info"><i class="bi bi-eye"></i>Details</a>
+                            <a href="#" class="btn btn-outline-secondary"><i class="bi bi-gear"></i> Editer</a>
+                            <a href="#" class="btn btn-outline-danger"><i class="bi bi-trash"></i> Supprimer</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>
+                            <img src="assets/unknown_author.webp" alt="Photo" class="author-pic img-responsive" height="100px">
+                        </td>
+                        <td>J.K. Rowling</td>
+                        <td>31 Juillet 1965</td>
+                        <td>
+                            <ul class="text-start">
+                                <li>Harry Potter and the Philosopher's Stone (1997)</li>
+                                <li>The Cuckoo's Calling (2013)</li>
+                                <li>Lethal White (2019)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-outline-info"><i class="bi bi-eye"></i> Details</a>
+                            <a href="#" class="btn btn-outline-secondary"><i class="bi bi-gear"></i> Editer</a>
+                            <a href="#" class="btn btn-outline-danger"><i class="bi bi-trash"></i> Supprimer</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>
+                            <img src="assets/unknown_author.webp" alt="Photo" class="author-pic img-responsive" height="100px">
+                        </td>
+                        <td>Will Eisner</td>
+                        <td>6 Marrs 1917</td>
+                        <td>
+                            <ul class="text-start">
+                                <li>Sheena, Queen of the Jungle (1937)</li>
+                                <li>The Spirit (1940)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-outline-info"><i class="bi bi-eye"></i> Details</a>
+                            <a href="#" class="btn btn-outline-secondary"><i class="bi bi-gear"></i> Editer</a>
+                            <a href="#" class="btn btn-outline-danger"><i class="bi bi-trash"></i> Supprimer</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>
+                            <img src="assets/unknown_author.webp" alt="Photo" class="author-pic img-responsive" height="100px">
+                        </td>
+                        <td>Franck Thilliez</td>
+                        <td>15 Octobre 1973</td>
+                        <td>
+                            <ul class="text-start">
+                                <li>La Mémoire Fantôme (2007)</li>
+                                <li>Angor (2014)</li>
+                                <li>Luca ((2019)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-outline-info"><i class="bi bi-eye"></i> Details</a>
+                            <a href="#" class="btn btn-outline-secondary"><i class="bi bi-gear"></i> Editer</a>
+                            <a href="#" class="btn btn-outline-danger"><i class="bi bi-trash"></i> Supprimer</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>
+                            <img src="assets/unknown_author.webp" alt="Photo" class="author-pic img-responsive" height="100px">
+                        </td>
+                        <td>Emile Zola</td>
+                        <td>2 Avril 1840</td>
+                        <td>
+                            <ul class="text-start">
+                                <li>Mon Saion (1866)</li>
+                                <li>Thérèse Raquin (1867)</li>
+                                <li>Les Soirées de Médan (1880)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-outline-info"><i class="bi bi-eye"></i> Details</a>
+                            <a href="#" class="btn btn-outline-secondary"><i class="bi bi-gear"></i> Editer</a>
+                            <a href="#" class="btn btn-outline-danger"><i class="bi bi-trash"></i> Supprimer</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>
+                            <img src="assets/unknown_author.webp" alt="Photo" class="author-pic img-responsive" height="100px">
+                        </td>
+                        <td>Victor Hugo</td>
+                        <td>26 Février 1802</td>
+                        <td>
+                            <ul class="text-start">
+                                <li>Le Dernier jour d'un condamné (1829)</li>
+                                <li>Les Contemplations (1856)</li>
+                                <li>Les Misérables (1862)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-outline-info"><i class="bi bi-eye"></i> Details</a>
+                            <a href="#" class="btn btn-outline-secondary"><i class="bi bi-gear"></i> Editer</a>
+                            <a href="#" class="btn btn-outline-danger"><i class="bi bi-trash"></i> Supprimer</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr class="text-danger fw-4 border-4">
+            <div class="text-end">
+                <a href="#" class="btn btn-outline-success"><i class="bi bi-plus-circle"></i> Ajouter un auteur</a>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-4 bg-dark text-center text-light p-3">
+        <span>Copyrights du site</span>
+    </footer>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</html>

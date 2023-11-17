@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <i class="bi bi-globe2"></i> eLibrary
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOptions" aria-controls="navbarOptions" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarOptions">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        <a class="nav-link" href="#">Educatifs</a>
+                        <a class="nav-link" href="#">Romans</a>
+                        <a class="nav-link" href="#">Comics</a>
+                        <a class="nav-link" href="#">Magazines</a>
+                    </div>
+                    <div class="nav-item dropdown me-4">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarGestionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear"></i> Gestion
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarGestionDropdown">
+                            <li><a class="dropdown-item" href="#">Ajouter un ouvrage</a></li>
+                            <li><a class="dropdown-item" href="#">Modifier un ouvrage</a></li>
+                            <li><a class="dropdown-item" href="#">Supprimer un ouvrage</a></li>
+                        </ul>
+                    </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Titre, Date, Auteur..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Rechercher</button>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container p-4 bg-dark text-light rounded mt-4">
+            <div class="h2">- Ajouter un Ouvrage -</div>
+
+            <hr class="my-3">
+
+            <form action="mailto:text@example.com" method="post">
+                <div class="row">
+                    <div class="col col-12 col-md-6 mb-3 ">
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Titre : </label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="La Bête Humaine" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="author" class="form-label">Auteur : </label>
+                            <select name="author" id="author" class="form-select" required>
+                                <option value="0">Sélectionnez un auteur</option>
+                                <option value="1">Emile Zola</option>
+                                <option value="2">Stephen King</option>
+                                <option value="3">C.S. Lewis</option>
+                                <option value="4">Charles Baudelaire</option>
+                                <option value="5">Florent Maudoux</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cover" class="form-label">Couverture : </label>
+                            <input type="file" class="form-control" id="cover" name="cover">
+                        </div>
+                        <div class="mb-3">
+                            <label for="score" class="form-label">Score : </label>
+                            <input type="range" class="form-range" id="score" name="score" min="1" max="5">
+                            <div class="row text-center">
+                                <div class="col">Nul</div>
+                                <div class="col">Mauvais</div>
+                                <div class="col">Normal</div>
+                                <div class="col">Bon</div>
+                                <div class="col">Bestseller</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-6 mb-3 ">
+                        <div class="mb-3">
+                            <label for="isbn" class="form-label">ISBN : </label>
+                            <input type="text" class="form-control" id="isbn" name="isbn" placeholder="XXX-XXXXX-XXX" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="genre" class="form-label">Genre : </label>
+                            <select name="genre" id="genre" class="form-select" multiple>
+                                <option value="1">Roman de Fiction</option>
+                                <option value="2">Biographie</option>
+                                <option value="3">Ouvrage Educatif</option>
+                                <option value="4">Poésie</option>
+                                <option value="5">Recueil de Nouvelles</option>
+                                <option value="6">Bande Dessinnée</option>
+                                <option value="7">Magazine</option>
+                                <option value="8">Journal</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="price" class="form-label">Prix : </label>
+                            <input type="text" class="form-control" id="price" name="price" placeholder="12.95" required>
+                        </div>
+                        <div class="mb-3"><label for="language">Langue : </label>
+                            <select name="language" id="language" class="form-select mt-4" required>
+                                <option value="0">Sélectionnez une langue</option>
+                                <optgroup label="Europe">
+                                    <option value="fr">Français</option>
+                                    <option value="be">Belge</option>
+                                    <option value="es">Espagnol</option>
+                                    <option value="pt">Portugais</option>
+                                    <option value="nl">Néerlandais</option>
+                                    <option value="it">Italien</option>
+                                    <option value="el">Grec</option>
+                                </optgroup>
+                                <optgroup label="Asie">
+                                    <option value="ja">Japonais</option>
+                                    <option value="zh">Mandarin</option>
+                                    <option value="th">Thaillandais</option>
+                                    <option value="ko">Coréen</option>
+                                    <option value="hi">Hindi</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col col-12">
+                        <label for="description" class="form-label">Description : </label>
+                        <textarea type="password" class="form-control form-textarea" id="description" name="description"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <hr class="my-3">
+
+                    <div class="text-end">
+                        <button class="btn btn-outline-light" type="submit"><i class="bi bi-plus-circle"></i>
+                            Ajouter</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </main>
+    <footer class="mt-4 bg-dark text-center text-light p-3">
+        <span>Copyrights du site</span>
+    </footer>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</html>
